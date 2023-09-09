@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Raleway&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  background-color:rgb(8, 8, 8);
+  color:white;
+  font-family: 'Mukta', sans-serif;
+}
+#container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+  margin:150px  0 auto;
+  position:relative;
+}
+#input1,#input2{
+  padding:5px;
+  width:180px;
+  height:30px;
+  border:1px solid rgb(250, 246, 246);
+  border-radius:5px;
+  background-color:black;
+  color:white;
+}
+#btn{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin: 40px auto;
+  padding:0.5em;
+  width:10em;
+  border:0.1em solid rgb(195, 20, 20);
+  background-color:rgb(230, 104, 104);
+  color:white;
+  border-radius: 7px 2px 7px 0px ;
+}
+#btn:hover{
+  background-color: rgb(13, 86, 42);
+  border:0.2em solid rgb(54, 230, 54);
+  transition:1s;
+}
+#showResult{
+  display:block;
+  justify-content: center;
+  align-items:center;
+  margin:0 auto;
+  padding-top:20px;
+}
+#print{
+  border:2px solid rgb(0, 0, 0);
+  background-color:rgb(0, 0, 0);
+  padding:10px;
+  color:rgb(235, 21, 114);
+  border-radius: 5px;
+  width:380px;
+  height:60px;
+  margin:0px auto;
+}
+#comment{
+  border:2px solid rgb(0, 0, 0);
+  background-color:rgb(0, 0, 0);
+  padding:10px;
+  color:white;
+  border-radius: 5px;
+  width:380px;
+  height:80px;
+  margin:0px auto;
+}
+@media screen and ( max-width:490px){
+  .emoji{
+    position:absolute;
+    margin-left:-60px;
+  }
+  .male{
+    position:absolute;
+    margin-left:-70px;
+  }
+  .female{
+    position:absolute;
+    margin-right:-60px;
+  }
+  #print{
+    width:360px;
+  }
+  #comment{
+    width:360px;
+  }
+  .love-emoji{
+    position:absolute;
+    margin-top:20px;
+    margin-right:100px;
+  }
+  .relationship{
+    position:absolute;
+    margin-top:210px;
+    margin-left:50px;
+  }
+}
+
+
+/* #display{
+  width:400px;
+  height:100px;
+  background-color:rgb(18, 17, 17);
+  color:white;
+  border: 0.2em solid black;
+  border-radius:1em;
+  margin: 4em auto;
+  padding:10px;
+} */

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+   <section id="main-container">
+    <h1 style="text-align:center;margin-top:20px">Love Calculator</h1>
+    <p style="text-align:center;">Get to know if your partner and you are compatible </p>
+    
+    <div id="container">
+      <img src="images/man.png" alt="maleicon" style="height:50px;position:absolute;top:-60px;left:100px;" class="male">
+      <input type="text" placeholder="Your Name" id="input1" />
+      <img src="images/woman.png" alt="femaleicon" style="height:50px;position:absolute;top:-60px;right:100px;" class="female">
+      <input type="text" placeholder="Partner's Name" id="input2" />
+    </div>
+
+    <img src="images/love.png" alt="" style="height:60px;position:absolute;top:120px;left:220px;" class="emoji">
+  
+    <div>
+      <button id="btn" onclick="calculateLove()">Calculate</button>
+    </div>
+
+    <div id="showResult">
+      <h3 id="print" style="text-align:center;" ></h3>
+      <h3 id="comment" style="text-align:center;"></h3>
+    </div>
+
+    <img src="images/relationship.png" alt="" style="height:40px;position:absolute;left:240px;top:350px;" class="relationship">
+    <img src="images/emoji.png" alt="" style="height:30px;position:absolute;right:200px;top:550px;" class="love-emoji">
+
+    <div id="display"></div>
+   </section>
+
+    <script src="index.js">
+      // var firstUser = input1.value
+      // var secondUser = input2.value
+
+    </script>
+  </body>
+</html>
