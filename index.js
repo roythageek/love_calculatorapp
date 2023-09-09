@@ -1,4 +1,3 @@
-
 function calculateLove() {
   var firstUser = input1.value;
   var secondUser = input2.value;
@@ -14,8 +13,11 @@ function calculateLove() {
     randomNumber +
     " % " +
     " of love ";
-
-  if (randomNumber <= 0 && randomNumber <= 10) {
+  if (firstUser == "" && randomNumber >=0) {
+    alert("please input a name !!!");
+    document.getElementById("print").innerHTML = "";
+    document.getElementById("comment").innerHTML="";  
+  }  else if (randomNumber <= 0 && randomNumber <= 10) {
     document.getElementById("comment").innerHTML = "this one no be love";
   } else if (randomNumber > 10 && randomNumber <= 20) {
     document.getElementById("comment").innerHTML =
@@ -41,14 +43,10 @@ function calculateLove() {
   } else if (randomNumber > 80 && randomNumber <= 100) {
     document.getElementById("comment").innerHTML =
       " i wish you both can get married right away";
-  } else if (firstUser && secondUser == "") {
-    alert("please input a name !!!");
-  }else{
-    alert("please input a name");
+  } else {
+    document.getElementById("comment").innerHTML = "error!!!";
   }
 
-
-  input1.value = ""; 
-  input2.value ="";
-
+  input1.value = "";
+  input2.value = "";
 }

@@ -75,14 +75,48 @@ body{
   .emoji{
     position:absolute;
     margin-left:-60px;
+    animation: mymove 2s linear ;
+  }
+  @keyframes mymove{
+    from{
+      transform:translateX(-200px);
+      opacity:0;
+    }
+    to{
+      transform:translateX(0px);
+      opacity:1;
+    }
+    
   }
   .male{
     position:absolute;
     margin-left:-70px;
+    animation: mymale 2s linear;
+  }
+  @keyframes mymale {
+    from{
+      transform:translateY(-200px);
+      opacity:0;
+    }
+    to{
+      transform:translateY(0px);
+      opacity:1;
+    }
   }
   .female{
     position:absolute;
     margin-right:-60px;
+    animation: myfemale 2s linear;
+  }
+  @keyframes myfemale {
+    from{
+      transform:translateY(200px);
+      opacity:0;
+    }
+    to{
+      transform:translateY(0px);
+      opacity:1;
+    }
   }
   #print{
     width:360px;
@@ -94,11 +128,33 @@ body{
     position:absolute;
     margin-top:20px;
     margin-right:100px;
+    animation: myemoji 10s linear;
+  }
+  @keyframes myemoji {
+    from{
+      transform: translateX(0px);
+      opacity:0;
+    }
+    to{
+      transform:translateX(0px);
+      opacity:1;
+    }
   }
   .relationship{
     position:absolute;
     margin-top:210px;
     margin-left:50px;
+    animation: mylover 10s linear;
+  }
+  @keyframes mylover {
+    from{
+      transform: translateX(0px);
+      opacity:0;
+    }
+    to{
+      transform:translateX(0px);
+      opacity:1;
+    }
   }
   .input1,.input{
     width:150px;
