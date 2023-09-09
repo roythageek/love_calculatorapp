@@ -19,10 +19,10 @@ body{
   position:relative;
 }
 #input1,#input2{
-  padding:5px;
+  padding:7px;
   width:180px;
   height:30px;
-  border:1px solid rgb(250, 246, 246);
+  border:1px solid rgb(94, 7, 7);
   border-radius:5px;
   background-color:black;
   color:white;
@@ -99,6 +99,9 @@ body{
     position:absolute;
     margin-top:210px;
     margin-left:50px;
+  }
+  .input1,.input{
+    width:150px;
   }
 }
 
